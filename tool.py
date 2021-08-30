@@ -730,14 +730,14 @@ def cross_corr_lags(x, y, lags=20):
 
     for l in range(lags,0,-1):
         lag.append(-l)
-        cc.append(np.corrcoef(EDA_EM_norm_dt[:-l,0], EDA_FC_norm_dt[l:,0])[0,1])
+        cc.append(np.corrcoef(x[:-l,0], y[l:,0])[0,1])
 
     lag.append(0)
-    cc.append(np.corrcoef(EDA_EM_norm_dt[:,0], EDA_FC_norm_dt[:,0])[0,1])
+    cc.append(np.corrcoef(x[:,0], y[:,0])[0,1])
 
     for l in range(1,lags+1):
         lag.append(l)
-        cc.append(np.corrcoef(EDA_EM_norm_dt[l:,0], EDA_FC_norm_dt[:-l,0])[0,1])
+        cc.append(np.corrcoef(x[l:,0], y[:-l,0])[0,1])
     
     pos = np.argmax(cc)
     print(lag[pos], cc[pos])
