@@ -10,8 +10,8 @@ Wearable sensors are very popular in monitoring sport performances and increasin
 # Dataset
 The collection data are in the folder **Data**. For each participant, a folder **Emotibit** contains data recorded by the open source device [Emotibit](https://www.emotibit.com/) and the folder **Flexcomp** contains reference data recorded by the [FlexComp Inﬁniti of Thought Technology Ltd](https://thoughttechnology.com/flexcomp-system-with-biograph-infiniti-software-t7555m/).
 
-# Instruction
+# Instructions
 All the validation steps are in the Jupyter file **PPG and EDA evaluation.ipynb**.
 
-# EDA Analyze
+# EDA Analysis
 The SCRs extraction requires Ledalab on Matlab available at: http://www.ledalab.de/.
