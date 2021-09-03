@@ -1,0 +1,3 @@
+EpochTimestamp,EmotiBitTimestamp,PacketNumber,DataLength,TypeTag,ProtocolVersion,DataReliability,DC
+1570475229.416646,210596,36614,1,DC,1,100,GX
+1570475229.831460,210921,36670,1,DC,1,100,GX
